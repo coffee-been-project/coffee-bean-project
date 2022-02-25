@@ -1,0 +1,10 @@
+.font{
+    color: #282c34;
+    font-family: "Century Gothic",sans-serif;
+}
+
+.list-flex-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
