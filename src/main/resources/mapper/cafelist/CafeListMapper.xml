@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.swproject.mapper.cafelist.CafeListMapper">
+
+    <select id="getCafeList" resultType="com.example.swproject.dto.cafelist.CafeListDTO">
+        SELECT * FROM cafe
+        WHERE cafe_code in ( -- where 뒤에 써준 coloum 과 in 이하의 조건을 만족하는 것만 픽
+            select cafe_code
+            from coffee
+            where coffee_use_bean = #{bean} AND coffee_method = #{method}
+        )
+    </select>
+
+    <select id="getCafeInfo" resultType="com.example.swproject.dto.cafelist.CafeListDTO">
+        SELECT * FROM cafe where cafe_code = #{id};
+    </select>
+
+</mapper>
+

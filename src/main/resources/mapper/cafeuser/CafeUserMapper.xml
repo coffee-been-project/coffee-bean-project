@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.swproject.mapper.cafeuser.CafeUserMapper">
+
+    <select id="getUserData" resultType="com.example.swproject.dto.cafeuser.CafeUserDTO">
+        SELECT * FROM user where user_id = #{id};
+    </select>
+
+    <select id="getUserCafe" resultType="com.example.swproject.dto.cafeuser.UserCafeDTO">
+        select cafe_name from cafe where user_code=(
+            select user_code from user where user_id = #{id})
+    </select>
+
+    <select id="getUserPrefer" resultType="com.example.swproject.dto.cafeuser.UserPreferDTO">
+
+
+        select cafe_name from cafe where cafe_code in(
+            select cafe_code from prefer where user_code in(
+                select user_code from user where user_id = #{id}))
+</select>
+
+</mapper>

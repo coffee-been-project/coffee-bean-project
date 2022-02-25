@@ -83,7 +83,4 @@ secrets.yml
 .gradletasknamecache
 .sts4-cache
 
-
-###
-*node_modules/*
-node_modules/
+node_modules

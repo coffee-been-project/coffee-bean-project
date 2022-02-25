@@ -1,0 +1,142 @@
+.login-flex-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login-title{
+    border-bottom: solid 2px #523313;
+    width: 760px;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: black;
+}
+
+.login-container{
+    width: 850px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    background-color: var(--main-white);
+}
+
+.login-container .login-wrap{
+    width: 760px;
+}
+
+.login-input-section-wrap{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input-wrap{
+    width: 465px;
+    height :48px;
+    background: var(--main-white);
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+}
+
+.password-wrap{
+    margin-top: 13px;
+}
+
+.login-input-wrap:focus-within{
+    border-bottom: 1.5px solid var(--main-yellow);
+}
+
+.login-input-wrap input{
+    border: none;
+    width:430px;
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 10px;
+    height:30px;
+    background: var(--main-white);
+}
+
+.login-button-wrap {
+    padding-top: 15px;
+}
+
+.login-button-wrap button{
+    width: 465px;
+    height :48px;
+    font-size: 18px;
+    background: var(--main-brown);
+    color: var(--main-yellow);
+    border: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.Easy-sign-in-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.Easy-sign-in-wrap h2{
+    font-size: 20px;
+    border-top: 1px solid var(--login-font-color);
+    padding-top: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.Easy-sign-in-wrap .sign-button-list {
+    padding-top:25px;
+    width: 760px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Easy-sign-in-wrap .sign-button-list button{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.sign-button-list{
+    display: flex;
+    padding: 0px 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-button-list button{
+    width: 200px;
+    height: 48px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.fa-naver-square {
+    color: white;
+    background-color: #00CC35;
+}
+
+.fa-kakao-square{
+    color: #3C1D1E;
+    margin-left: 2px;
+    background-color: #FAE100;
+}
+
+.Easy-sign-in-wrap .forget-msg{
+    color:var(--login-font-color);
+    font-size: 14px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--login-font-color);
+    margin-bottom: 10px;
+}

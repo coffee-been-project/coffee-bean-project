@@ -1,0 +1,10 @@
+:root{
+    --main-brown:rgb(75,54,33);
+    --main-black:rgb(0,0,0);
+    --main-background:rgb(239,231,220);
+    --main-yellow:rgb(255,217,1);
+    --main-white: rgb(252, 252, 252);
+
+    --main-gray: rgb(162, 162, 162);
+    --light-gray: rgb(226, 226, 226);
+}
